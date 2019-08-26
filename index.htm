@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>DroneCommander</title>
+    
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/material-icons.css">
+    <link rel="stylesheet" href="css/roboto/roboto-fontface.css">
+    <link rel="stylesheet" href="css/roboto-condensed/roboto-condensed-fontface.css">
+    <link rel="stylesheet" href="css/roboto-slab/roboto-slab-fontface.css">
+    
+  </head>
+  <body>
+    <h1>DroneCommander</h1>
+    We are using node <script>document.write(process.versions.node)</script>,
+    Chrome <script>document.write(process.versions.chrome)</script>,
+    and Electron <script>document.write(process.versions.electron)</script>.
+<!--
+    <div id="netmsg">
+      <div><h1>messages:</h1></div>
+    </div>
+-->
+    <ul class="collection with-header" id="netmsg">
+      
+    </ul>
+<div class="inputFooter">
+    <div class="input-field col s6">
+      <input value="command" id="sendmsg" type="text" class="validate">
+      <label class="active" for="first_name2">Command:</label>
+    </div>
+    <!--<input type="text" id="sendmsg">-->
+    <!--<input type="submit" value="send" id="btn">-->
+    <button class="btn waves-effect waves-light blue" type="submit" id="btn" name="action">Submit
+      <i class="material-icons right">send</i>
+    </button>
+</div>
+
+    <script src="js/materialize.js"></script>
+    <script src="updCopnnection.js"></script>
+  </body>
+</html>Copy

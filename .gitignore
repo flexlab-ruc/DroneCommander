@@ -1,0 +1,5 @@
+# exclude all node packages (run npm install to get them all)
+node_modules/*
+
+# exclude all build files
+dist/*

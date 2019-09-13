@@ -55,7 +55,7 @@ function addToLog(msg, icon)
   var div = document.createElement("div");
   var person = document.createElement("i");
   person.classList.add("material-icons");
-  person.innerText = "person";
+  person.innerText = icon;
 
   //plop sound
   player.play("assets/sounds/161628__crazyfrog249__blop.wav", function(err){

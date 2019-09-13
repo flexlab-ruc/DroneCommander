@@ -11,14 +11,46 @@ body{
 h1{
     font-weight: bold; 
 }
-<style>
-.inputFooter {
+
+#header{
+    text-align: center;
+    height: 60px;
+}
+
+#heading
+{
+    font-size: 32px;
+}
+
+#messages{
+    //background-color: brown;
+}
+#netmsg{
+    height: 400px;
+    max-height: 400px;
+    overflow: scroll;
+}
+}
+
+
+li.collection-item{
+    padding: 0,0,0,0 !important;
+}
+
+i.material-icons{
+    color: black;
+}
+
+#inputFooter {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: red;
+  //background-color: cadetblue;
   color: white;
   text-align: center;
 }
-</style>
+input {
+    margin-left: 20px;
+    margin-right: 20px;
+}

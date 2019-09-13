@@ -79,9 +79,16 @@ function addToLog(msg, icon)
 
   div.appendChild(span);
 
-  span.appendChild(i);
+  if (icon == "person"){
+    span.appendChild(i);
 
+  }
+  
   document.getElementById("netmsg").appendChild(htmlmsg);  
+
+
+  // autoscroll
+  document.getElementById("netmsg").scrollTop=1000000;
 
 /*
     var htmlmsg = document.createElement("div");

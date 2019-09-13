@@ -58,7 +58,7 @@ function addToLog(msg, icon)
   person.innerText = "person";
 
   //plop sound
-  player.play('161628__crazyfrog249__blop.wav', function(err){
+  player.play("assets/sounds/161628__crazyfrog249__blop.wav", function(err){
     if (err) throw err
   });
 
@@ -71,7 +71,7 @@ function addToLog(msg, icon)
   
   var i = document.createElement("i");
   i.classList.add("material-icons");
-  i.innerText = icon;
+  i.innerText = "replay";
 
   i.onclick = function() {sendfunction(msg, "person")};
 

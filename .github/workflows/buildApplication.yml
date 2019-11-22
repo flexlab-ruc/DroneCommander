@@ -1,11 +1,11 @@
-# name of your github action
+e# name of your github action
 name: CI
 # this will help you specify where to run 
 on:
   push:
     branches:
     # this will run on the electron branch
-      - electron
+      - Release
 # this is where the magic happens, each job happens in parallel btw
 jobs:
   build_on_mac:

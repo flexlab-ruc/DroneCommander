@@ -1,4 +1,4 @@
-name: CI
+name: CI build application fro mac-os and windows
 
 on: 
   push:

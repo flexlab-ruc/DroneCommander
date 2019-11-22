@@ -6,11 +6,11 @@ on:
       - Release
 
 jobs:
-  build_for_win:
+  job_id: build_for_win
     name: My first job
     runs-on: [macOS-latest]
-
-  build_for_macos:
+    
+  job_id: build_for_macos
     name: My second job
     runs-on: [macOS-latest]
   

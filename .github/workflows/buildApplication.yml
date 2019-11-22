@@ -1,4 +1,4 @@
-name: CI build application fro mac-os and windows
+name: CI_build_application 
 
 on: 
   push:
@@ -18,14 +18,14 @@ jobs:
     - name: see directory
       run: ls
   
-build_on_win:
-  runs-on: windows-2016
-  steps:
-  - uses: actions/checkout@master
-    with:
-      ref: feature/github-actions        
-  - uses: actions/setup-node@master
-    with:
-      node-version: 10.16
-  - name: see directory
-    run: ls
+  build_on_win:
+    runs-on: windows-2016
+    steps:
+    - uses: actions/checkout@master
+      with:
+        ref: feature/github-actions        
+    - uses: actions/setup-node@master
+      with:
+        node-version: 10.16
+    - name: see directory
+      run: ls

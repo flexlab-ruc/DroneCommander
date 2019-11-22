@@ -1,16 +1,32 @@
-name: CI_build_application 
-
-on: 
+# name of your github action
+name: CI
+# this will help you specify where to run 
+on:
   push:
     branches:
-      - Release
-
+    # this will run on the electron branch
+      - electron
+# this is where the magic happens, each job happens in parallel btw
 jobs:
-  job_id: build_for_win
-    name: My first job
-    runs-on: [macOS-latest]
-    
-  job_id: build_for_macos
-    name: My second job
-    runs-on: [macOS-latest]
-  
+  build_on_mac:
+    runs-on: macOS-latest
+    steps:
+    - uses: actions/checkout@master
+      with:
+        ref: electron
+    - uses: actions/setup-node@master
+      with:
+        node-version: 10.16
+    - name: see directory
+      run: ls
+  build_on_win:
+    runs-on: windows-2016
+    steps:
+    - uses: actions/checkout@master
+      with:
+        ref: feature/github-actions        
+    - uses: actions/setup-node@master
+      with:
+        node-version: 10.16
+    - name: see directory
+      run: ls

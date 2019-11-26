@@ -9,10 +9,17 @@ jobs:
   build_on_mac:
     runs-on: macOS-latest
     steps:
-    - uses: actions/checkout@Release
+    - uses: aactions/checkout@v1
+    - uses: actions/setup-node@v1
       with:
-        ref: electron
-    - uses: actions/setup-node@Release
+        node-version: 10.x
+    - name: see directory
+      run: ls
+  build_om_win:
+    runs-on: windows-latest
+    steps:
+    - uses: aactions/checkout@v1
+    - uses: actions/setup-node@v1
       with:
         node-version: 10.x
     - name: see directory

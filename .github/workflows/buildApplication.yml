@@ -9,7 +9,7 @@ jobs:
   build_on_mac:
     runs-on: macOS-latest
     steps:
-    - uses: aactions/checkout@v1
+    - uses: actions/checkout@v1
     - uses: actions/setup-node@v1
       with:
         node-version: 10.x
@@ -18,7 +18,7 @@ jobs:
   build_om_win:
     runs-on: windows-latest
     steps:
-    - uses: aactions/checkout@v1
+    - uses: actions/checkout@v1
     - uses: actions/setup-node@v1
       with:
         node-version: 10.x
